@@ -43,9 +43,9 @@ class Hotel
     private $price;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="category", type="string", length=255)
+     * @ORM\Column(name="category", type="integer")
      */
     private $category;
 
@@ -132,7 +132,7 @@ class Hotel
     /**
      * Set category
      *
-     * @param string $category
+     * @param integer $category
      * @return Hotel
      */
     public function setCategory($category)
@@ -145,7 +145,7 @@ class Hotel
     /**
      * Get category
      *
-     * @return string 
+     * @return integer
      */
     public function getCategory()
     {
