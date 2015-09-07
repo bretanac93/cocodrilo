@@ -19,6 +19,9 @@ class AppKernel extends Kernel
             new Cocodrilo\AppBundle\AppBundle(),
             new Cocodrilo\UserBundle\UserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new FOS\CommentBundle\FOSCommentBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle($this),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
