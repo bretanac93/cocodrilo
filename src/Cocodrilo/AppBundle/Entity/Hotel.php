@@ -2,6 +2,7 @@
 
 namespace Cocodrilo\AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -49,6 +50,15 @@ class Hotel
      */
     private $category;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Cocodrilo\AppBundle\Entity\FeedBack", mappedBy="hotels")
+     */
+    private $feedback;
+
+    public function __construct()
+    {
+        $this->feedback = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -150,5 +160,15 @@ class Hotel
     public function getCategory()
     {
         return $this->category;
+    }
+
+    public function getFeedBack()
+    {
+        return $this->feedback;
+    }
+
+    public function __toString()
+    {
+        return $this->getName();
     }
 }

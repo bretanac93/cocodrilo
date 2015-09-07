@@ -19,6 +19,7 @@ class FeedBackType extends AbstractType
             ->add('email')
             ->add('category')
             ->add('body')
+            ->add('hotels')
         ;
     }
     

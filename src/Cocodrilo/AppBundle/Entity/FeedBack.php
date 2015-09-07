@@ -3,6 +3,7 @@
 namespace Cocodrilo\AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Cocodrilo\AppBundle\Entity\Hotel as hotel;
 
 /**
  * FeedBack
@@ -49,6 +50,11 @@ class FeedBack
      */
     private $body;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="Cocodrilo\AppBundle\Entity\Hotel", inversedBy="feedback")
+     * @ORM\JoinColumn(name="hotel_id", referencedColumnName="id")
+     */
+    private $hotels;
 
     /**
      * Get id
@@ -150,5 +156,22 @@ class FeedBack
     public function getBody()
     {
         return $this->body;
+    }
+
+    public function getHotels()
+    {
+        return $this->hotels;
+    }
+
+    public function setHotels(hotel $hotel)
+    {
+        $this->hotels = $hotel;
+
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->getUsername();
     }
 }
