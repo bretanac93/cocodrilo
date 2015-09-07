@@ -1,0 +1,30 @@
+feedback:
+    path:     /
+    defaults: { _controller: "AppBundle:FeedBack:index" }
+
+feedback_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:FeedBack:show" }
+
+feedback_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:FeedBack:new" }
+
+feedback_create:
+    path:     /create
+    defaults: { _controller: "AppBundle:FeedBack:create" }
+    methods:  POST
+
+feedback_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:FeedBack:edit" }
+
+feedback_update:
+    path:     /{id}/update
+    defaults: { _controller: "AppBundle:FeedBack:update" }
+    methods:  [POST, PUT]
+
+feedback_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:FeedBack:delete" }
+    methods:  [POST, DELETE]

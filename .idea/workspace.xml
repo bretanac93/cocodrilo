@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9321aa0-61de-4960-aa6a-b572ff2c805d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cocodrilo/AppBundle/Entity/FeedBack.php" afterPath="$PROJECT_DIR$/src/Cocodrilo/AppBundle/Entity/FeedBack.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cocodrilo/AppBundle/Entity/Hotel.php" afterPath="$PROJECT_DIR$/src/Cocodrilo/AppBundle/Entity/Hotel.php" />
-    </list>
+    <list default="true" id="f9321aa0-61de-4960-aa6a-b572ff2c805d" name="Default" comment="" />
     <ignored path="cocodrilo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />

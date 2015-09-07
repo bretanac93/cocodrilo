@@ -1,3 +1,7 @@
+app_feedback:
+    resource: "@AppBundle/Resources/config/routing/feedback.yml"
+    prefix:   /feedback
+
 app_hotel:
     resource: "@AppBundle/Resources/config/routing/hotel.yml"
     prefix:   /hotel
