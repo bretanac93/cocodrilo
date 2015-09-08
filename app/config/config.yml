@@ -112,5 +112,5 @@ sonata_admin:
         show: SonataAdminBundle:CRUD:show.html.twig
         edit: SonataAdminBundle:CRUD:edit.html.twig
 
-parameters:
-    events.path.images: %kernel.root_dir%/../web/uploads/images/
+
+
