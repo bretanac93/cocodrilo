@@ -55,9 +55,15 @@ class Hotel
      */
     private $feedback;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Cocodrilo\AppBundle\Entity\ImageUpload", mappedBy="images")
+     */
+    private $images;
+
     public function __construct()
     {
         $this->feedback = new ArrayCollection();
+        $this->images = new ArrayCollection();
     }
 
     /**
@@ -165,6 +171,11 @@ class Hotel
     public function getFeedBack()
     {
         return $this->feedback;
+    }
+
+    public function getImages()
+    {
+        return $this->images;
     }
 
     public function __toString()

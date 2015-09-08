@@ -112,5 +112,7 @@ sonata_admin:
         show: SonataAdminBundle:CRUD:show.html.twig
         edit: SonataAdminBundle:CRUD:edit.html.twig
 
+parameters:
+    cocodrilo.path.images: %kernel.root_dir%/../web/uploads/images/
 
 

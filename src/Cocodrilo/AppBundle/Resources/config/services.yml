@@ -7,3 +7,9 @@ services:
         arguments: [~, Cocodrilo\AppBundle\Entity\Hotel, SonataAdminBundle:CRUD]
         tags:
             - {name: sonata.admin, manager_type: orm, group: Hotel, label: Hotel}
+
+    app.admin.image_upload:
+        class: Cocodrilo\AppBundle\Admin\ImageUploadAdmin
+        arguments: [~, Cocodrilo\AppBundle\Entity\ImageUpload, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Image, label: ImageUpload}
