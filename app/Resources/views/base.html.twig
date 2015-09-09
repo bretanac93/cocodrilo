@@ -1,13 +1,140 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block styles %}
+        {# Global Mandatory style START #}
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
+        {# Global Mandatory style END #}
+
+        {# Plugin Styles START #}
+        <link rel="stylesheet" href="{{ asset('assets/plugins/jquery.animateSlider/css/jquery.animateSlider.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/plugins/jquery.animateSlider/css/font-awesome.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/plugins/jquery.animateSlider/css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/plugins/jquery.animateSlider/css/demo2.css') }}">
+
+        {# Plugin Styles END #}
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+{% block navbar %}
+
+{% endblock %}
+{% block slider %}
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 additional-info">
+                    <ul class="list-unstyled list-inline" style="display: inline-block">
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>+1 234 5678</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="mail"><a href="mailto://info@enterprise.com">info@enterprise.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url('app_homepage') }}">
+                    <img alt="Brand" src="{{ asset('assets/img/logo-resized.png') }}">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Index<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">What are we offer?</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <ul class="anim-slider">
+
+        <!-- Slide No1 -->
+        <li class="anim-slide">
+            <h1 id="looks">LOOKS</h1>
+
+            <h1 id="amazing">PRETTY AMAZING</h1>
+
+            <h1 id="place">PLACE</h1>
+        </li>
+
+
+        <!-- Slide No2 -->
+        <li class="anim-slide">
+            <div id="img1"></div>
+            <div id="img2"></div>
+            <div id="img3"></div>
+        </li>
+
+        <!-- Slide No3 -->
+        <li class="anim-slide">
+            <h1 id="T">T</h1>
+
+            <h1 id="r">r</h1>
+
+            <h1 id="y">y</h1>
+
+            <h1 id="i">i</h1>
+
+            <h1 id="t">t</h1>
+
+            <h1 id="mark">!</h1>
+        </li>
+
+        <!-- Arrows -->
+        <nav class="anim-arrows">
+			<span class="anim-arrows-prev">
+				<i class="fa fa-angle-left fa-3x"></i>
+			</span>
+			<span class="anim-arrows-next">
+				<i class="fa fa-angle-right fa-3x"></i>
+			</span>
+        </nav>
+        <!-- Dynamically created dots -->
+
+    </ul>
+{% endblock %}
+{% block body %}
+{% endblock %}
+{% block scripts %}
+    {# Global Scripts START #}
+    <script src="{{ asset('assets/js/jquery-2.1.1.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+    {# Global Scripts END #}
+
+    {# Plugin Scripts START #}
+    <script src="{{ asset('assets/plugins/jquery.animateSlider/js/modernizr.js') }}"></script>
+    <script src="{{ asset('assets/plugins/jquery.animateSlider/js/jquery.animateSlider.js') }}"></script>
+    <script src="{{ asset('assets/js/site.js') }}"></script>
+    {# Plugin Scripts END #}
+{% endblock %}
+</body>
 </html>
