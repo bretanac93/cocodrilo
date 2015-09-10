@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffaa384101c1e32d6d6b74bf331a25c1",
+    "hash": "fdf4fc68cf5babb37283249d103beb4e",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -16,7 +16,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/cocur-slugify-6bf38846ecb34d24288cdea7195122b6452c1882-zip-f3bfb2.zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/6bf38846ecb34d24288cdea7195122b6452c1882",
                 "reference": "6bf38846ecb34d24288cdea7195122b6452c1882",
                 "shasum": "952b11139d4a6021e9f5d0b73b6286540291580a"
             },
@@ -79,7 +79,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/components-jquery-7b1d1104656a092423fbfba13c5920e9bbba290c-zip-f9d393.zip",
+                "url": "https://api.github.com/repos/components/jquery/zipball/7b1d1104656a092423fbfba13c5920e9bbba290c",
                 "reference": "7b1d1104656a092423fbfba13c5920e9bbba290c",
                 "shasum": "336cb7939d82d8fa6412940f9bcf6ab261492c2e"
             },
@@ -112,6 +112,59 @@
             "time": "2015-05-08 05:04:47"
         },
         {
+            "name": "cunningsoft/chat-bundle",
+            "version": "0.4",
+            "target-dir": "Cunningsoft/ChatBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmecke/ChatBundle.git",
+                "reference": "65b996abca79096fa9837dc33a8c46e758c4b823"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmecke/ChatBundle/zipball/65b996abca79096fa9837dc33a8c46e758c4b823",
+                "reference": "65b996abca79096fa9837dc33a8c46e758c4b823",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": ">=2.2.0",
+                "knplabs/knp-time-bundle": "1.3",
+                "symfony/symfony": "~2.3"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Cunningsoft\\ChatBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Mecke",
+                    "homepage": "https://github.com/dmecke"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/dmecke/ChatBundle/contributors"
+                }
+            ],
+            "description": "A chat bundle for Symfony2",
+            "homepage": "https://github.com/dmecke/ChatBundle",
+            "keywords": [
+                "chat",
+                "communication"
+            ],
+            "time": "2014-08-18 20:22:16"
+        },
+        {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
             "source": {
@@ -121,7 +174,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-annotations-f25c8aab83e0c3e976fd7d19875f198ccf2f7535-zip-b3ba6f.zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
                 "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
                 "shasum": "8df90e3eb2a4232bb65b2834f476dd7594256722"
             },
@@ -189,7 +242,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-cache-8c434000f420ade76a07c64cbe08ca47e5c101ca-zip-45d536.zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/8c434000f420ade76a07c64cbe08ca47e5c101ca",
                 "reference": "8c434000f420ade76a07c64cbe08ca47e5c101ca",
                 "shasum": "ae927873d68ef7f735b40576b01d1065fb7a845d"
             },
@@ -259,7 +312,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-collections-6c1e4eef75f310ea1b3e30945e9f06e652128b8a-zip-02a8e4.zip",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/6c1e4eef75f310ea1b3e30945e9f06e652128b8a",
                 "reference": "6c1e4eef75f310ea1b3e30945e9f06e652128b8a",
                 "shasum": "d608a106e6fd19326a5183e960a05a36ea20584a"
             },
@@ -325,7 +378,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-common-0009b8f0d4a917aabc971fb089eba80e872f83f9-zip-6c323d.zip",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/0009b8f0d4a917aabc971fb089eba80e872f83f9",
                 "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9",
                 "shasum": "037c060d555de2a5c5c1ad362748cf4f1238dd08"
             },
@@ -398,7 +451,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-dbal-a370e5b95e509a7809d11f3d280acfc9310d464b-zip-fbab5f.zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/a370e5b95e509a7809d11f3d280acfc9310d464b",
                 "reference": "a370e5b95e509a7809d11f3d280acfc9310d464b",
                 "shasum": "ed27ce29f424bead4e28b87743de3a9512132cd6"
             },
@@ -461,7 +514,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-doctrine-bundle-8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01-zip-50713d.zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01",
                 "reference": "8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01",
                 "shasum": "b453ccc238b3518dff0f962704998d6987fdacfd"
             },
@@ -540,7 +593,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-doctrine-cache-bundle-e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d-zip-62e58f.zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d",
                 "reference": "e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d",
                 "shasum": "1b9ec0ed29ca703e2d5a72a0b91d376171bd9e6c"
             },
@@ -623,7 +676,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-inflector-0bcb2e79d8571787f18b7eb036ed3d004908e604-zip-fa006a.zip",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/0bcb2e79d8571787f18b7eb036ed3d004908e604",
                 "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604",
                 "shasum": "4c8db0385e587c74f7eb5b38beb972a08f3f5b72"
             },
@@ -690,7 +743,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-lexer-83893c552fd2045dd78aef794c31e694c37c0b8c-zip-53c158.zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
                 "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
                 "shasum": "ea803b392dbefa2446589a959cea2f452ae0f387"
             },
@@ -744,7 +797,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/doctrine-orm-5aedac1e5c5caaeac14798822c70325dc242d467-zip-a84d35.zip",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/5aedac1e5c5caaeac14798822c70325dc242d467",
                 "reference": "5aedac1e5c5caaeac14798822c70325dc242d467",
                 "shasum": "3e8264b682c0414e035e4104f7b0e1b58b8b0b79"
             },
@@ -818,7 +871,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/friendsofsymfony-comment-bundle-3c60322b818c8b4a6578d2df574742f9e2554b17-zip-3316a2.zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCommentBundle/zipball/3c60322b818c8b4a6578d2df574742f9e2554b17",
                 "reference": "3c60322b818c8b4a6578d2df574742f9e2554b17",
                 "shasum": "5f9a9af74833000a2a26d4932a139f0a64729d95"
             },
@@ -896,7 +949,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/friendsofsymfony-rest-bundle-3fb2d30c58cde59213dbddd031bc36171b8b68b6-zip-e30930.zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/3fb2d30c58cde59213dbddd031bc36171b8b68b6",
                 "reference": "3fb2d30c58cde59213dbddd031bc36171b8b68b6",
                 "shasum": "65877fb823e8bebc0b657178b7c705df89c4d115"
             },
@@ -980,7 +1033,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/friendsofsymfony-user-bundle-2022ac8463a8c50dd631f93a17064bd41795fff2-zip-ed2796.zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/2022ac8463a8c50dd631f93a17064bd41795fff2",
                 "reference": "2022ac8463a8c50dd631f93a17064bd41795fff2",
                 "shasum": "c4f59e384afdc3ee90cb4c0178b18fb248442e24"
             },
@@ -1046,7 +1099,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/incenteev-composer-parameter-handler-84a205fe80a46101607bafbc423019527893ddd0-zip-9fcc42.zip",
+                "url": "https://api.github.com/repos/Incenteev/ParameterHandler/zipball/84a205fe80a46101607bafbc423019527893ddd0",
                 "reference": "84a205fe80a46101607bafbc423019527893ddd0",
                 "shasum": "7cba2119f4d4ec462857079761f6545414b78fb0"
             },
@@ -1097,7 +1150,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/jdorn-sql-formatter-64990d96e0959dff8e059dfcdc1af130728d92bc-zip-8e3318.zip",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/64990d96e0959dff8e059dfcdc1af130728d92bc",
                 "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc",
                 "shasum": "089d38ed220b1fbbf32a4a37f2ed88ac2aa19718"
             },
@@ -1147,7 +1200,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/jms-metadata-22b72455559a25777cfd28c4ffda81ff7639f353-zip-cad78b.zip",
+                "url": "https://api.github.com/repos/schmittjoh/metadata/zipball/22b72455559a25777cfd28c4ffda81ff7639f353",
                 "reference": "22b72455559a25777cfd28c4ffda81ff7639f353",
                 "shasum": "7e055b0f75fd6f56829090203d5aff138f8391ca"
             },
@@ -1199,7 +1252,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/jms-parser-lib-c509473bc1b4866415627af0e1c6cc8ac97fa51d-zip-d6e55f.zip",
+                "url": "https://api.github.com/repos/schmittjoh/parser-lib/zipball/c509473bc1b4866415627af0e1c6cc8ac97fa51d",
                 "reference": "c509473bc1b4866415627af0e1c6cc8ac97fa51d",
                 "shasum": "05ec629637b28c8ae00f4a968ee809fe56da14ab"
             },
@@ -1234,7 +1287,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/jms-serializer-c8a171357ca92b6706e395c757f334902d430ea9-zip-a87d80.zip",
+                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/c8a171357ca92b6706e395c757f334902d430ea9",
                 "reference": "c8a171357ca92b6706e395c757f334902d430ea9",
                 "shasum": "5289d198f36419c463abc6ce7a1a1145b963111a"
             },
@@ -1305,7 +1358,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/jms-serializer-bundle-bb15db3e661168f4310fad48b86915ff1ca33795-zip-9993fc.zip",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSerializerBundle/zipball/bb15db3e661168f4310fad48b86915ff1ca33795",
                 "reference": "bb15db3e661168f4310fad48b86915ff1ca33795",
                 "shasum": "efe021256d5feb5e817c0f51dc7da6f1cdc37d75"
             },
@@ -1374,7 +1427,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/knplabs-knp-menu-5758d0026d7ed00c8dd4727e413918cf2dc74c1a-zip-8052f0.zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/5758d0026d7ed00c8dd4727e413918cf2dc74c1a",
                 "reference": "5758d0026d7ed00c8dd4727e413918cf2dc74c1a",
                 "shasum": "1460b40c81509a06eec5df8749bc2ff3d6fb4243"
             },
@@ -1439,7 +1492,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/knplabs-knp-menu-bundle-bdfc95da5ff7e4e67f948aaa9ea5da835a3a9088-zip-1c50dd.zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/bdfc95da5ff7e4e67f948aaa9ea5da835a3a9088",
                 "reference": "bdfc95da5ff7e4e67f948aaa9ea5da835a3a9088",
                 "shasum": "acf2c7c1a560bbbf00d01ab2e0cc150f08a1d775"
             },
@@ -1483,6 +1536,65 @@
             "time": "2014-08-01 09:57:23"
         },
         {
+            "name": "knplabs/knp-time-bundle",
+            "version": "v1.3",
+            "target-dir": "Knp/Bundle/TimeBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpTimeBundle.git",
+                "reference": "abf7c17ab817d9b991445f56297c44b2217f6a5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpTimeBundle/zipball/abf7c17ab817d9b991445f56297c44b2217f6a5d",
+                "reference": "abf7c17ab817d9b991445f56297c44b2217f6a5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "suggest": {
+                "symfony/twig-bundle": "to use the Twig time_diff function"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Bundle\\TimeBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/KnpTimeBundle/contributors"
+                }
+            ],
+            "description": "Knplabs time bundle makes your dates look sensible and descriptive",
+            "homepage": "http://github.com/KnpLabs/KnpTimeBundle",
+            "keywords": [
+                "bundle",
+                "date",
+                "descriptive time",
+                "knp",
+                "knplabs",
+                "time"
+            ],
+            "time": "2013-12-12 12:04:14"
+        },
+        {
             "name": "kriswallsmith/assetic",
             "version": "v1.3.0",
             "source": {
@@ -1492,7 +1604,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/kriswallsmith-assetic-56cb5d6dec9e7a68a4da2fa89844f39d41092f31-zip-efed10.zip",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/56cb5d6dec9e7a68a4da2fa89844f39d41092f31",
                 "reference": "56cb5d6dec9e7a68a4da2fa89844f39d41092f31",
                 "shasum": "fa641ec752dfb5da6cc142e4082a2a6bfb646d43"
             },
@@ -1570,7 +1682,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/monolog-monolog-0524c87587ab85bc4c2d6f5b41253ccb930a5422-zip-551a2a.zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0524c87587ab85bc4c2d6f5b41253ccb930a5422",
                 "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422",
                 "shasum": "aff57583d9e185a0d61b29e933ad0e60f1a839e8"
             },
@@ -1646,7 +1758,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/phpcollection-phpcollection-b8bf55a0a929ca43b01232b36719f176f86c7e83-zip-cd37a8.zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-collection/zipball/b8bf55a0a929ca43b01232b36719f176f86c7e83",
                 "reference": "b8bf55a0a929ca43b01232b36719f176f86c7e83",
                 "shasum": "2c0cccf004ed231a90b11cfdcb7ed075b361a103"
             },
@@ -1696,7 +1808,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/phpoption-phpoption-94e644f7d2051a5f0fcf77d81605f152eecff0ed-zip-03c623.zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/94e644f7d2051a5f0fcf77d81605f152eecff0ed",
                 "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed",
                 "shasum": "0251c3c0b17a2547162517fc6b509e5e5391f55b"
             },
@@ -1746,7 +1858,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/psr-log-fe0936ee26643249e916849d48e3a51d5f5e278b-zip-e71523.zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
                 "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
                 "shasum": "7f7c6c86849d08d39aaf6f0472f58f2ebba9b056"
             },
@@ -1785,7 +1897,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sensio-distribution-bundle-62d99ba41144e704300e40f755346553702b27c9-zip-dbd4e8.zip",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/62d99ba41144e704300e40f755346553702b27c9",
                 "reference": "62d99ba41144e704300e40f755346553702b27c9",
                 "shasum": "7e2e2c50d2018e5350cee7779012026b4682640e"
             },
@@ -1844,7 +1956,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sensio-framework-extra-bundle-18fc2063c4d6569cdca47a39fbac32342eb65f3c-zip-17e55c.zip",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/18fc2063c4d6569cdca47a39fbac32342eb65f3c",
                 "reference": "18fc2063c4d6569cdca47a39fbac32342eb65f3c",
                 "shasum": "59921264e87e90b5e1966d8112d360554f0e4bcf"
             },
@@ -1900,7 +2012,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sensio-generator-bundle-e50108c2133ee5c9c484555faed50c17a61221d3-zip-a615d3.zip",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/e50108c2133ee5c9c484555faed50c17a61221d3",
                 "reference": "e50108c2133ee5c9c484555faed50c17a61221d3",
                 "shasum": "94be684b3bb3f92fd9f59171f9b161ccf0d2febc"
             },
@@ -1947,7 +2059,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sensiolabs-security-checker-7735fd97ff7303d9df776b8dbc970f949399abc9-zip-570697.zip",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/7735fd97ff7303d9df776b8dbc970f949399abc9",
                 "reference": "7735fd97ff7303d9df776b8dbc970f949399abc9",
                 "shasum": "a0d175f674ce2e5aef0f433a68cfc1a4a83655bb"
             },
@@ -1991,7 +2103,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sonata-project-admin-bundle-68a836e5dbcb89a9bec36586186d4fdf3fedf6f5-zip-6f92e3.zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/68a836e5dbcb89a9bec36586186d4fdf3fedf6f5",
                 "reference": "68a836e5dbcb89a9bec36586186d4fdf3fedf6f5",
                 "shasum": "d2afbd0f6681832935e93c925716ae1cff40333c"
             },
@@ -2070,7 +2182,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sonata-project-block-bundle-ae5563d970ea438f78a0e73b20c7e61003aa62b6-zip-74ef13.zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/ae5563d970ea438f78a0e73b20c7e61003aa62b6",
                 "reference": "ae5563d970ea438f78a0e73b20c7e61003aa62b6",
                 "shasum": "a7bf7119d3c4e27a78d656770d51fd8cbc953e79"
             },
@@ -2135,7 +2247,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sonata-project-cache-a1522be3a1874c4646e7f9aaea6ca973b8bcbcde-zip-271713.zip",
+                "url": "https://api.github.com/repos/sonata-project/cache/zipball/a1522be3a1874c4646e7f9aaea6ca973b8bcbcde",
                 "reference": "a1522be3a1874c4646e7f9aaea6ca973b8bcbcde",
                 "shasum": "d2b72bba4c734188574f2f80e82e5d59db405ed8"
             },
@@ -2196,7 +2308,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sonata-project-core-bundle-4d6f441f9f0eaa8232eb87c6aa5bf145586e141f-zip-b417fc.zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/4d6f441f9f0eaa8232eb87c6aa5bf145586e141f",
                 "reference": "4d6f441f9f0eaa8232eb87c6aa5bf145586e141f",
                 "shasum": "2500d6aa8ec61fd4f46e13f86d09776a34fcf3e1"
             },
@@ -2265,7 +2377,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/sonata-project-exporter-92835b5aac7a5300b3c34f4b52ed4327a1d1ed47-zip-9248e4.zip",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/92835b5aac7a5300b3c34f4b52ed4327a1d1ed47",
                 "reference": "92835b5aac7a5300b3c34f4b52ed4327a1d1ed47",
                 "shasum": "9ae962e619c310afce4096deec77f53aea1a86b5"
             },
@@ -2328,7 +2440,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/swiftmailer-swiftmailer-0697e6aa65c83edf97bb0f23d8763f94e3f11421-zip-86df66.zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0697e6aa65c83edf97bb0f23d8763f94e3f11421",
                 "reference": "0697e6aa65c83edf97bb0f23d8763f94e3f11421",
                 "shasum": "1fa8a24f387c52e2b4c72c3050189cc265ac8e93"
             },
@@ -2381,7 +2493,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/symfony-assetic-bundle-3ae5c8ca3079b6e0033cc9fbfb6500e2bc964da5-zip-6a76fa.zip",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/3ae5c8ca3079b6e0033cc9fbfb6500e2bc964da5",
                 "reference": "3ae5c8ca3079b6e0033cc9fbfb6500e2bc964da5",
                 "shasum": "7e8fc4080c0595a96da799c943912bc14d56f7f3"
             },
@@ -2451,7 +2563,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/symfony-monolog-bundle-9320b6863404c70ebe111e9040dab96f251de7ac-zip-767cc5.zip",
+                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/9320b6863404c70ebe111e9040dab96f251de7ac",
                 "reference": "9320b6863404c70ebe111e9040dab96f251de7ac",
                 "shasum": "9acbb21181ac43bc8fca3eea454ad19c32c4ed5b"
             },
@@ -2510,7 +2622,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/symfony-swiftmailer-bundle-970b13d01871207e81d17b17ddda025e7e21e797-zip-450ca0.zip",
+                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/970b13d01871207e81d17b17ddda025e7e21e797",
                 "reference": "970b13d01871207e81d17b17ddda025e7e21e797",
                 "shasum": "2e0336c1e2202bd95e7a35f00f7f3ee6975dd497"
             },
@@ -2567,7 +2679,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/symfony-symfony-a9af4708b4bb650c4897e9b8dfbfbdb2ea5f0486-zip-90e633.zip",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/a9af4708b4bb650c4897e9b8dfbfbdb2ea5f0486",
                 "reference": "a9af4708b4bb650c4897e9b8dfbfbdb2ea5f0486",
                 "shasum": "d963218e0c6a26a2c50a091bf8f50707ac8b959a"
             },
@@ -2689,7 +2801,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/twig-extensions-449e3c8a9ffad7c2479c7864557275a32b037499-zip-4f3fe2.zip",
+                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/449e3c8a9ffad7c2479c7864557275a32b037499",
                 "reference": "449e3c8a9ffad7c2479c7864557275a32b037499",
                 "shasum": "93e86c52b37dcc7626e939217ce848c2ab8918ca"
             },
@@ -2741,7 +2853,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/twig-twig-ca8d3aa90b6a01c82e07909fe815d6b443e75a23-zip-fc6cae.zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
                 "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
                 "shasum": "938a787369a9b8fd1ccc0d31ef3b6dfe4dde94ea"
             },
@@ -2802,7 +2914,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/willdurand-jsonp-callback-validator-1a7d388bb521959e612ef50c5c7b1691b097e909-zip-977538.zip",
+                "url": "https://api.github.com/repos/willdurand/JsonpCallbackValidator/zipball/1a7d388bb521959e612ef50c5c7b1691b097e909",
                 "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909",
                 "shasum": "e55002c8b53d38e770e0be399f88d99fc5f050be"
             },
@@ -2842,7 +2954,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "http://composer.upr.edu.cu/dist/willdurand-negotiation-8a84c5956e765f432542fc52a8c6e9aff4508eb3-zip-e778d9.zip",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/8a84c5956e765f432542fc52a8c6e9aff4508eb3",
                 "reference": "8a84c5956e765f432542fc52a8c6e9aff4508eb3",
                 "shasum": "8e45135a1045fb31c66d06014cf473f8229054ff"
             },
