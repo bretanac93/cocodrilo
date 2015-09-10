@@ -41,6 +41,12 @@ class ImageUpload
     private $temp;
 
     /**
+     * @ORM\ManyToOne(targetEntity="Cocodrilo\AppBundle\Entity\Hotel", inversedBy="images")
+     * @ORM\JoinColumn(name="hotel_id", referencedColumnName="id")
+     */
+    private $hotels;
+
+    /**
      * Get id
      *
      * @return integer
@@ -140,6 +146,18 @@ class ImageUpload
         if ($image) {
             unlink($image);
         }
+    }
+
+    public function getHotels()
+    {
+        return $this->hotels;
+    }
+
+    public function setHotels(hotel $hotel)
+    {
+        $this->hotels = $hotel;
+
+        return $this;
     }
 
     public function __toString()
