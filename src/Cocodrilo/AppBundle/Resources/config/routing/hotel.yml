@@ -6,25 +6,3 @@ hotel_show:
     path:     /{id}/show
     defaults: { _controller: "AppBundle:Hotel:show" }
 
-hotel_new:
-    path:     /new
-    defaults: { _controller: "AppBundle:Hotel:new" }
-
-hotel_create:
-    path:     /create
-    defaults: { _controller: "AppBundle:Hotel:create" }
-    methods:  POST
-
-hotel_edit:
-    path:     /{id}/edit
-    defaults: { _controller: "AppBundle:Hotel:edit" }
-
-hotel_update:
-    path:     /{id}/update
-    defaults: { _controller: "AppBundle:Hotel:update" }
-    methods:  [POST, PUT]
-
-hotel_delete:
-    path:     /{id}/delete
-    defaults: { _controller: "AppBundle:Hotel:delete" }
-    methods:  [POST, DELETE]
