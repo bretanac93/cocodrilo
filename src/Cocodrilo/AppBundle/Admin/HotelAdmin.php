@@ -69,6 +69,7 @@ class HotelAdmin extends Admin
             ->add('location')
             ->add('price')
             ->add('category')
+            ->add('images')
         ;
     }
 }
