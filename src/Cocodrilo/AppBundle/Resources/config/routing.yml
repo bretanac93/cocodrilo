@@ -7,8 +7,24 @@ app_hotel:
     prefix:   /hotel
 
 app_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: AppBundle:Default:index }
+
+app_about:
+    path:     /about
+    defaults: { _controller: AppBundle:Default:about }
+
+app_contact:
+    path:     /contact
+    defaults: { _controller: AppBundle:Default:contact }
+
+app_services:
+    path:     /services
+    defaults: { _controller: AppBundle:Default:services }
+
+app_more_info:
+    path:     /more-info
+    defaults: { _controller: AppBundle:Default:moreInfo }
 
 fos_comment_api:
     type: rest
