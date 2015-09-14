@@ -32,12 +32,19 @@ class Hotel
     /**
      * @var string
      *
+     * @ORM\Column(name="description", type="string", length=255)
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="location", type="string", length=255)
      */
     private $location;
 
     /**
-     * @var decimal
+     * @var float
      *
      * @ORM\Column(name="price", type="decimal")
      */
@@ -51,7 +58,7 @@ class Hotel
     private $offering;
 
     /**
-     * @var decimal
+     * @var float
      *
      * @ORM\Column(name="priceOffert", type="decimal" , nullable=true)
      */
@@ -114,6 +121,29 @@ class Hotel
     }
 
     /**
+     * Set description
+     *
+     * @param string $description
+     * @return Hotel
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
      * Set offering
      *
      * @param boolean $offring
@@ -139,7 +169,7 @@ class Hotel
     /**
      * Set priceOffert
      *
-     * @param integer $priceOffert
+     * @param float $priceOffert
      * @return Hotel
      */
     public function setPriceOffert($priceOffert)
@@ -152,7 +182,7 @@ class Hotel
     /**
      * Get priceOffert
      *
-     * @return decimal
+     * @return float
      */
     public function getPriceOffert()
     {
@@ -185,7 +215,7 @@ class Hotel
     /**
      * Set price
      *
-     * @param string $price
+     * @param float $price
      * @return Hotel
      */
     public function setPrice($price)
@@ -198,7 +228,7 @@ class Hotel
     /**
      * Get price
      *
-     * @return string 
+     * @return float
      */
     public function getPrice()
     {
