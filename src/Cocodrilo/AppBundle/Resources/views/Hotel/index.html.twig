@@ -1,37 +1,212 @@
 {% extends '::base.html.twig' %}
 
-{% block body -%}
-    <h1>Hotel list</h1>
+{% block title %}Hotels{% endblock %}
 
-    <table class="records_list">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Location</th>
-                <th>Price</th>
-                <th>Category</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for entity in entities %}
-            <tr>
-                <td><a href="{{ path('hotel_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>{{ entity.name }}</td>
-                <td>{{ entity.location }}</td>
-                <td>{{ entity.price }}</td>
-                <td>{{ entity.category }}</td>
-                <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('hotel_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+{% block slider %}{% endblock %}
 
-    {% endblock %}
+{% block body %}
+    <div class="main">
+        <div class="container">
+            <!-- BEGIN SIDEBAR & CONTENT -->
+            <div class="row margin-bottom-40">
+                <!-- BEGIN CONTENT -->
+                <div class="col-md-12 col-sm-12">
+                    <h1>Hotels</h1>
+
+                    <div class="content-page">
+                        <div class="row">
+                            <!-- BEGIN LEFT SIDEBAR -->
+                            <div class="col-md-12 col-sm-12 blog-posts">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                            <img class="img-responsive" alt=""
+                                                 src="{{ asset('assets/img/img1.jpg') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
+                                                etquas</a></h2>
+                                        <ul class="blog-info">
+                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
+                                            <li><i class="fa fa-comments"></i> 17</li>
+                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-money"></i> $100</li>
+                                        </ul>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
+                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
+                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
+                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
+                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
+                                                    class="icon-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <hr class="blog-post-sep">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                            <img class="img-responsive" alt=""
+                                                 src="{{ asset('assets/img/img1.jpg') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
+                                                etquas</a></h2>
+                                        <ul class="blog-info">
+                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
+                                            <li><i class="fa fa-comments"></i> 17</li>
+                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i></li>
+                                        </ul>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
+                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
+                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
+                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
+                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
+                                                    class="icon-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <hr class="blog-post-sep">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                            <img class="img-responsive" alt=""
+                                                 src="{{ asset('assets/img/img1.jpg') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
+                                                etquas</a></h2>
+                                        <ul class="blog-info">
+                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
+                                            <li><i class="fa fa-comments"></i> 17</li>
+                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i></li>
+                                        </ul>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
+                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
+                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
+                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
+                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
+                                                    class="icon-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <hr class="blog-post-sep">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                            <img class="img-responsive" alt=""
+                                                 src="{{ asset('assets/img/img1.jpg') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
+                                                etquas</a></h2>
+                                        <ul class="blog-info">
+                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
+                                            <li><i class="fa fa-comments"></i> 17</li>
+                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i></li>
+                                        </ul>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
+                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
+                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
+                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
+                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
+                                                    class="icon-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <hr class="blog-post-sep">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                            <img class="img-responsive" alt=""
+                                                 src="{{ asset('assets/img/img1.jpg') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
+                                                etquas</a></h2>
+                                        <ul class="blog-info">
+                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
+                                            <li><i class="fa fa-comments"></i> 17</li>
+                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
+                                                        class="fa fa-star-o"></i></li>
+                                        </ul>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
+                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
+                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
+                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
+                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
+                                                    class="icon-angle-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <hr class="blog-post-sep">
+                                <ul class="pagination">
+                                    <li><a href="javascript:;">Prev</a></li>
+                                    <li><a href="javascript:;">1</a></li>
+                                    <li><a href="javascript:;">2</a></li>
+                                    <li class="active"><a href="javascript:;">3</a></li>
+                                    <li><a href="javascript:;">4</a></li>
+                                    <li><a href="javascript:;">5</a></li>
+                                    <li><a href="javascript:;">Next</a></li>
+                                </ul>
+                            </div>
+                            <!-- END LEFT SIDEBAR -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTENT -->
+            </div>
+            <!-- END SIDEBAR & CONTENT -->
+        </div>
+    </div>
+{% endblock %}
+
+{#{% block body -%}#}
+    {#<h1>Hotel list</h1>#}
+
+    {#<table class="records_list">#}
+        {#<thead>#}
+            {#<tr>#}
+                {#<th>Id</th>#}
+                {#<th>Name</th>#}
+                {#<th>Location</th>#}
+                {#<th>Price</th>#}
+                {#<th>Category</th>#}
+                {#<th>Actions</th>#}
+            {#</tr>#}
+        {#</thead>#}
+        {#<tbody>#}
+        {#{% for entity in entities %}#}
+            {#<tr>#}
+                {#<td><a href="{{ path('hotel_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>#}
+                {#<td>{{ entity.name }}</td>#}
+                {#<td>{{ entity.location }}</td>#}
+                {#<td>{{ entity.price }}</td>#}
+                {#<td>{{ entity.category }}</td>#}
+                {#<td>#}
+                {#<ul>#}
+                    {#<li>#}
+                        {#<a href="{{ path('hotel_show', { 'id': entity.id }) }}">show</a>#}
+                    {#</li>#}
+                {#</ul>#}
+                {#</td>#}
+            {#</tr>#}
+        {#{% endfor %}#}
+        {#</tbody>#}
+    {#</table>#}
+
+    {#{% endblock %}#}
