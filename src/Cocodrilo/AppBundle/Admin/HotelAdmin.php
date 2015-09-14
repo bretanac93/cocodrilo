@@ -55,6 +55,8 @@ class HotelAdmin extends Admin
             ->add('location')
             ->add('price')
             ->add('category')
+            ->add('offering')
+            ->add('priceOffert')
         ;
     }
 
@@ -69,6 +71,7 @@ class HotelAdmin extends Admin
             ->add('location')
             ->add('price')
             ->add('category')
+            ->add('images')
         ;
     }
 }
