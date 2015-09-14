@@ -37,11 +37,25 @@ class Hotel
     private $location;
 
     /**
-     * @var string
+     * @var decimal
      *
      * @ORM\Column(name="price", type="decimal")
      */
     private $price;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="offering", type="boolean", nullable=true)
+     */
+    private $offering;
+
+    /**
+     * @var decimal
+     *
+     * @ORM\Column(name="priceOffert", type="decimal" , nullable=true)
+     */
+    private $priceOffert;
 
     /**
      * @var integer
@@ -97,6 +111,52 @@ class Hotel
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Set offering
+     *
+     * @param boolean $offring
+     * @return Hotel
+     */
+    public function setOffering($offering)
+    {
+        $this->offering = $offering;
+
+        return $this;
+    }
+
+    /**
+     * Get offering
+     *
+     * @return boolean
+     */
+    public function getOffering()
+    {
+        return $this->offering;
+    }
+
+    /**
+     * Set priceOffert
+     *
+     * @param integer $priceOffert
+     * @return Hotel
+     */
+    public function setPriceOffert($priceOffert)
+    {
+        $this->priceOffert = $priceOffert;
+
+        return $this;
+    }
+
+    /**
+     * Get priceOffert
+     *
+     * @return decimal
+     */
+    public function getPriceOffert()
+    {
+        return $this->priceOffert;
     }
 
     /**
