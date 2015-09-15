@@ -55,6 +55,7 @@ class HotelAdmin extends Admin
             ->add('location')
             ->add('price')
             ->add('category')
+            ->add('description', 'textarea')
             ->add('offering')
             ->add('priceOffert')
             ->add('media', 'sonata_media_type', array(
