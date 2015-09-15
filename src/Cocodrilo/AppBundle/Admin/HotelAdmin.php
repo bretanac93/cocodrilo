@@ -57,6 +57,10 @@ class HotelAdmin extends Admin
             ->add('category')
             ->add('offering')
             ->add('priceOffert')
+            ->add('media', 'sonata_media_type', array(
+                'provider' => 'sonata.media.provider.image',
+                'context'  => 'engine'
+            ));
         ;
     }
 
