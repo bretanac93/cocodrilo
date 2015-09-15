@@ -6,6 +6,15 @@
     "autoload": {
         "psr-4": { "": "src/", "SymfonyStandard\\": "app/SymfonyStandard/" }
     },
+    "repositories": [
+        {
+          "packagist": false
+        },
+        {
+            "type": "composer",
+            "url": "http://composer.upr.edu.cu"
+        }
+    ],
 
     "require": {
         "php": ">=5.3.9",
@@ -25,7 +34,9 @@
         "sonata-project/admin-bundle": "dev-master",
         "sonata-project/doctrine-orm-admin-bundle": "dev-master",
         "sonata-project/user-bundle": "2.2.4",
-        "sonata-project/easy-extends-bundle": "2.1.9"
+        "sonata-project/easy-extends-bundle": "2.1.9",
+        "knplabs/knp-paginator-bundle": "dev-master",
+        "ornicar/gravatar-bundle": "1.1.2"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
