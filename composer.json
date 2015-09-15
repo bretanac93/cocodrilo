@@ -5,8 +5,7 @@
     "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
         "psr-4": { "": "src/", "SymfonyStandard\\": "app/SymfonyStandard/" }
-    },
-    "repositories": [
+    },"repositories": [
         {
           "packagist": false
         },
@@ -15,7 +14,6 @@
             "url": "http://composer.upr.edu.cu"
         }
     ],
-
     "require": {
         "php": ">=5.3.9",
         "symfony/symfony": "2.7.*",
@@ -36,7 +34,8 @@
         "sonata-project/user-bundle": "2.2.4",
         "sonata-project/easy-extends-bundle": "2.1.9",
         "knplabs/knp-paginator-bundle": "dev-master",
-        "ornicar/gravatar-bundle": "1.1.2"
+        "ornicar/gravatar-bundle": "1.1.2",
+        "sonata-project/media-bundle": "2.3.3"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
