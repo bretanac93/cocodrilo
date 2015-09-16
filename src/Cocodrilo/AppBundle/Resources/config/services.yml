@@ -13,3 +13,9 @@ services:
         arguments: [~, Cocodrilo\AppBundle\Entity\ImageUpload, SonataAdminBundle:CRUD]
         tags:
             - {name: sonata.admin, manager_type: orm, group: Image, label: ImageUpload}
+
+    app.admin.slogan:
+        class: Cocodrilo\AppBundle\Admin\SloganAdmin
+        arguments: [~, Cocodrilo\AppBundle\Entity\Slogan, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Slogan}

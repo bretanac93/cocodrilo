@@ -8,7 +8,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 
-class HotelAdmin extends Admin
+class SloganAdmin extends Admin
 {
     /**
      * @param DatagridMapper $datagridMapper
@@ -17,10 +17,8 @@ class HotelAdmin extends Admin
     {
         $datagridMapper
             ->add('id')
-            ->add('name')
-            ->add('location')
-            ->add('price')
-            ->add('category')
+            ->add('title')
+            ->add('description')
         ;
     }
 
@@ -31,10 +29,8 @@ class HotelAdmin extends Admin
     {
         $listMapper
             ->add('id')
-            ->add('name')
-            ->add('location')
-            ->add('price')
-            ->add('category')
+            ->add('title')
+            ->add('description')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -51,13 +47,8 @@ class HotelAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('name')
-            ->add('location')
-            ->add('price')
-            ->add('category')
-            ->add('description', 'textarea')
-            ->add('offering')
-            ->add('priceOffert')
+            ->add('title')
+            ->add('description')
         ;
     }
 
@@ -68,11 +59,8 @@ class HotelAdmin extends Admin
     {
         $showMapper
             ->add('id')
-            ->add('name')
-            ->add('location')
-            ->add('price')
-            ->add('category')
-            ->add('images')
+            ->add('title')
+            ->add('description')
         ;
     }
 }

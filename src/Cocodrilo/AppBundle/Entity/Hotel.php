@@ -82,11 +82,6 @@ class Hotel
      */
     private $images;
 
-    /**
-     * @var \Application\Sonata\MediaBundle\Entity\Media
-     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Media", cascade={"persist"}, fetch="LAZY")
-     */
-    protected $media;
 
     public function __construct()
     {
@@ -275,21 +270,6 @@ class Hotel
         return $this->images;
     }
 
-    /**
-     * @param MediaInterface $media
-     */
-    public function setMedia(MediaInterface $media)
-    {
-        $this->media = $media;
-    }
-
-    /**
-     * @return MediaInterface
-     */
-    public function getMedia()
-    {
-        return $this->media;
-    }
 
     public function __toString()
     {
