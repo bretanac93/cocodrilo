@@ -1,5 +1,72 @@
 {% extends '::base.html.twig' %}
 {% block title %}Homepage{% endblock %}
+
+{% block slider %}
+    <div class="demo-2">
+        <div id="slider" class="sl-slider-wrapper">
+            <div class="sl-slider">
+                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25"
+                     data-slice2-rotation="-25"
+                     data-slice1-scale="2" data-slice2-scale="2">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-1"></div>
+                        <h2>{{ slogan1.title }}</h2>
+                        <blockquote><p>{{ slogan1.description }}</p></blockquote>
+                    </div>
+                </div>
+
+                <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15"
+                     data-slice1-scale="1.5" data-slice2-scale="1.5">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-2"></div>
+                        <h2>{{ slogan2.title }}</h2>
+                        <blockquote><p>{{ slogan2.description }}</p></blockquote>
+                    </div>
+                </div>
+
+                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3"
+                     data-slice1-scale="2" data-slice2-scale="1">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-3"></div>
+                        <h2>{{ slogan3.title }}</h2>
+                        <blockquote><p>{{ slogan3.description }}</p></blockquote>
+                    </div>
+                </div>
+
+                <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25"
+                     data-slice1-scale="2" data-slice2-scale="1">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-4"></div>
+                        <h2>{{ slogan4.title }}</h2>
+                        <blockquote><p>{{ slogan4.description }}</p></blockquote>
+                    </div>
+                </div>
+
+                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10"
+                     data-slice1-scale="2" data-slice2-scale="1">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-5"></div>
+                        <h2>{{ slogan5.title }}</h2>
+                        <blockquote><p>{{ slogan5.description }}</p></blockquote>
+                    </div>
+                </div>
+            </div>
+            <!-- /sl-slider -->
+
+            <nav id="nav-dots" class="nav-dots">
+                <span class="nav-dot-current"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+
+        </div>
+        <!-- /slider-wrapper -->
+    </div>
+    <!-- Slider END -->
+{% endblock %}
+
 {% block body %}
     <div class="main">
         <div class="container">

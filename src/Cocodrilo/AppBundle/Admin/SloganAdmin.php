@@ -51,4 +51,12 @@ class SloganAdmin extends Admin
             ->add('description')
         ;
     }
+
+    protected function configureFormFields(FormMapper $formMapper)
+    {
+        $formMapper
+            ->add('title')
+            ->add('description')
+            ;
+    }
 }

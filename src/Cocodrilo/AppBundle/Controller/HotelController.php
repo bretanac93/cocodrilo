@@ -43,6 +43,8 @@ class HotelController extends Controller
             'hotels'=>$entity
         ));
 
+
+
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find Hotel entity.');
         }
