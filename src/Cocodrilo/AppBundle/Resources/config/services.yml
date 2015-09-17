@@ -6,16 +6,22 @@ services:
         class: Cocodrilo\AppBundle\Admin\HotelAdmin
         arguments: [~, Cocodrilo\AppBundle\Entity\Hotel, SonataAdminBundle:CRUD]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: Hotel, label: Hotel}
+            - {name: sonata.admin, manager_type: orm, group: Admin, label: Hotel}
 
     app.admin.image_upload:
         class: Cocodrilo\AppBundle\Admin\ImageUploadAdmin
         arguments: [~, Cocodrilo\AppBundle\Entity\ImageUpload, SonataAdminBundle:CRUD]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: Image, label: ImageUpload}
+            - {name: sonata.admin, manager_type: orm, group: Admin, label: ImageUpload}
 
     app.admin.slogan:
         class: Cocodrilo\AppBundle\Admin\SloganAdmin
         arguments: [~, Cocodrilo\AppBundle\Entity\Slogan, SonataAdminBundle:CRUD]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Slogan}
+            - {name: sonata.admin, manager_type: orm, group: Admin, label: Slogan}
+
+    app.admin.feed_back:
+        class: Cocodrilo\AppBundle\Admin\FeedBackAdmin
+        arguments: [~, Cocodrilo\AppBundle\Entity\FeedBack, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Admin, label: FeedBack}

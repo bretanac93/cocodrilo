@@ -2,9 +2,12 @@
 
 namespace Cocodrilo\AppBundle\Entity;
 
+use Application\Sonata\MediaBundle\Entity\Gallery;
+use Application\Sonata\MediaBundle\Entity\Media;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
-use Sonata\MediaBundle\Model\MediaInterface;
+use Doctrine\ORM\PersistentCollection;
+
 
 /**
  * Hotel
@@ -81,6 +84,15 @@ class Hotel
      * @ORM\OneToMany(targetEntity="Cocodrilo\AppBundle\Entity\ImageUpload", mappedBy="images")
      */
     private $images;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
+     * @ORM\JoinTable(name="hotel_gallery",
+     *   joinColumns={@ORM\JoinColumn(name="hotel_id", referencedColumnName="id")},
+     *   inverseJoinColumns={@ORM\JoinColumn(name="gallery_id", referencedColumnName="id")}
+     * )
+     */
+    protected $gallery;
 
 
     public function __construct()
@@ -270,6 +282,15 @@ class Hotel
         return $this->images;
     }
 
+    public function getGallery()
+    {
+        return $this->gallery;
+    }
+
+    public function setGallery(PersistentCollection $gallery)
+    {
+        $this->gallery = $gallery;
+    }
 
     public function __toString()
     {

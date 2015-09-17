@@ -35,20 +35,8 @@ class SloganAdmin extends Admin
                 'actions' => array(
                     'show' => array(),
                     'edit' => array(),
-                    'delete' => array(),
                 )
             ))
-        ;
-    }
-
-    /**
-     * @param FormMapper $formMapper
-     */
-    protected function configureFormFields(FormMapper $formMapper)
-    {
-        $formMapper
-            ->add('title')
-            ->add('description')
         ;
     }
 

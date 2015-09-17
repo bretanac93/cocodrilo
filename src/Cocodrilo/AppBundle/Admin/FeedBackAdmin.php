@@ -8,7 +8,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 
-class HotelAdmin extends Admin
+class FeedBackAdmin extends Admin
 {
     /**
      * @param DatagridMapper $datagridMapper
@@ -17,10 +17,11 @@ class HotelAdmin extends Admin
     {
         $datagridMapper
             ->add('id')
-            ->add('name')
-            ->add('location')
-            ->add('price')
+            ->add('username')
+            ->add('email')
+            ->add('type')
             ->add('category')
+            ->add('body')
         ;
     }
 
@@ -31,11 +32,11 @@ class HotelAdmin extends Admin
     {
         $listMapper
             ->add('id')
-            ->add('name')
-            ->add('location')
-            ->add('price')
+            ->add('username')
+            ->add('email')
+            ->add('type')
             ->add('category')
-            ->add('gallery')
+            ->add('body')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -52,23 +53,13 @@ class HotelAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('name')
-            ->add('location')
-            ->add('price')
+            ->add('username')
+            ->add('email')
+            ->add('type')
             ->add('category')
-            ->add('description', 'textarea')
-            ->add('offering')
-            ->add('priceOffert')
-            ->add('gallery',
-                'sonata_type_model',
-                array(
-                    'label' => 'Secondary Picture',
-                    'class' => 'Application\Sonata\MediaBundle\Entity\Gallery',
-                    'by_reference' => false,
-                    'multiple' => true,
-                    'expanded' => false,
-                    'required' => false,
-                ));
+            ->add('body')
+            ->add('hotels')
+        ;
     }
 
     /**
@@ -78,11 +69,11 @@ class HotelAdmin extends Admin
     {
         $showMapper
             ->add('id')
-            ->add('name')
-            ->add('location')
-            ->add('price')
+            ->add('username')
+            ->add('email')
+            ->add('type')
             ->add('category')
-            ->add('images')
+            ->add('body')
         ;
     }
 }

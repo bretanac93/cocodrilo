@@ -16,155 +16,47 @@
                     <div class="content-page">
                         <div class="row">
                             <!-- BEGIN LEFT SIDEBAR -->
-                            <div class="col-md-12 col-sm-12 blog-posts">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="item">
-                                            <img class="img-responsive" alt=""
-                                                 src="{{ asset('assets/img/img1.jpg') }}">
+                            {% for entity in entities %}
+                                <div class="col-md-12 col-sm-12 blog-posts">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4">
+                                            <div class="item">
+                                                <img class="img-responsive" alt=""
+                                                     src="{{ asset('assets/img/img1.jpg') }}">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8">
-                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
-                                                etquas</a></h2>
-                                        <ul class="blog-info">
-                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
-                                            <li><i class="fa fa-comments"></i> 17</li>
-                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i></li>
-                                            <li><i class="fa fa-money"></i> $100</li>
-                                        </ul>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
-                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
-                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
-                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
-                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
-                                                    class="icon-angle-right"></i></a>
-                                    </div>
-                                </div>
-                                <hr class="blog-post-sep">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="item">
-                                            <img class="img-responsive" alt=""
-                                                 src="{{ asset('assets/img/img1.jpg') }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8">
-                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
-                                                etquas</a></h2>
-                                        <ul class="blog-info">
-                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
-                                            <li><i class="fa fa-comments"></i> 17</li>
-                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i></li>
-                                        </ul>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
-                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
-                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
-                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
-                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
-                                                    class="icon-angle-right"></i></a>
-                                    </div>
-                                </div>
-                                <hr class="blog-post-sep">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="item">
-                                            <img class="img-responsive" alt=""
-                                                 src="{{ asset('assets/img/img1.jpg') }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8">
-                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
-                                                etquas</a></h2>
-                                        <ul class="blog-info">
-                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
-                                            <li><i class="fa fa-comments"></i> 17</li>
-                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i></li>
-                                        </ul>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
-                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
-                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
-                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
-                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
-                                                    class="icon-angle-right"></i></a>
-                                    </div>
-                                </div>
-                                <hr class="blog-post-sep">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="item">
-                                            <img class="img-responsive" alt=""
-                                                 src="{{ asset('assets/img/img1.jpg') }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8">
-                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
-                                                etquas</a></h2>
-                                        <ul class="blog-info">
-                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
-                                            <li><i class="fa fa-comments"></i> 17</li>
-                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i></li>
-                                        </ul>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
-                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
-                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
-                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
-                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
-                                                    class="icon-angle-right"></i></a>
-                                    </div>
-                                </div>
-                                <hr class="blog-post-sep">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="item">
-                                            <img class="img-responsive" alt=""
-                                                 src="{{ asset('assets/img/img1.jpg') }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8">
-                                        <h2><a href="{{ url('hotel_show', { 'id': 1 }) }}">Corrupti quos dolores
-                                                etquas</a></h2>
-                                        <ul class="blog-info">
-                                            <li><i class="fa fa-map-marker"></i> Varadero</li>
-                                            <li><i class="fa fa-comments"></i> 17</li>
-                                            <li><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i
-                                                        class="fa fa-star-o"></i></li>
-                                        </ul>
-                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui sint
-                                            blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et
-                                            quas molestias excepturi sint occaecati cupiditate non eleifend enim a
-                                            feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor
-                                            sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.</p>
-                                        <a href="{{ url('hotel_show', { 'id': 1 }) }}" class="more">Read more <i
-                                                    class="icon-angle-right"></i></a>
-                                    </div>
-                                </div>
+                                        <div class="col-md-8 col-sm-8">
+                                            <h2><a href="{{ url('hotel_show', { 'id': entity.id }) }}">{{ entity.name }}</a></h2>
+                                            <ul class="blog-info">
+                                                <li><i class="fa fa-map-marker"></i>{{ entity.location }}</li>
+                                                <li><i class="fa fa-comments"></i> {{ entity.feedback.count }}</li>
 
-                                <hr class="blog-post-sep">
-                                <ul class="pagination">
-                                    <li><a href="javascript:;">Prev</a></li>
-                                    <li><a href="javascript:;">1</a></li>
-                                    <li><a href="javascript:;">2</a></li>
-                                    <li class="active"><a href="javascript:;">3</a></li>
-                                    <li><a href="javascript:;">4</a></li>
-                                    <li><a href="javascript:;">5</a></li>
-                                    <li><a href="javascript:;">Next</a></li>
-                                </ul>
-                            </div>
+                                                    {% for i in 1..entity.category %}
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                    {% endfor %}
+
+                                                <li><i class="fa fa-money"></i> ${{ entity.price }}</li>
+                                            </ul>
+                                            <p>{{ entity.description }}</p>
+                                            <a href="{{ url('hotel_show', { 'id': entity.id }) }}" class="more">Read more <i
+                                                        class="icon-angle-right"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <br/>
+
+                                </div>
+                            {% endfor %}
                             <!-- END LEFT SIDEBAR -->
+                            <ul class="pagination">
+                                <li><a href="javascript:;">Prev</a></li>
+                                <li><a href="javascript:;">1</a></li>
+                                <li><a href="javascript:;">2</a></li>
+                                <li class="active"><a href="javascript:;">3</a></li>
+                                <li><a href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">5</a></li>
+                                <li><a href="javascript:;">Next</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

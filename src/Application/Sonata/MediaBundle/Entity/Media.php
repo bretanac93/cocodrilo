@@ -11,6 +11,7 @@
 
 namespace Application\Sonata\MediaBundle\Entity;
 
+use Cocodrilo\AppBundle\Entity\Hotel;
 use Sonata\MediaBundle\Entity\BaseMedia as BaseMedia;
 
 /**
@@ -28,6 +29,16 @@ class Media extends BaseMedia
      */
     protected $id;
 
+//    /**
+//     * @var Hotel
+//     *
+//     * @ORM\ManyToOne(targetEntity="Hotel", inversedBy="pictures")
+//     * @ORM\JoinColumns({
+//     *     @ORM\JoinColumn(name="hotel", referencedColumnName="id")
+//     * })
+//     */
+//    private $hotel;
+
     /**
      * Get id
      *
@@ -37,4 +48,16 @@ class Media extends BaseMedia
     {
         return $this->id;
     }
+
+//    public function getHotel()
+//    {
+//        return $this->hotel;
+//    }
+//
+//    public function setHotel(Hotel $hotel)
+//    {
+//        $this->hotel = $hotel;
+//
+//        return $this;
+//    }
 }
