@@ -35,6 +35,7 @@ class HotelAdmin extends Admin
             ->add('location')
             ->add('price')
             ->add('category')
+            ->add('gallery')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'show' => array(),
@@ -58,11 +59,16 @@ class HotelAdmin extends Admin
             ->add('description', 'textarea')
             ->add('offering')
             ->add('priceOffert')
-            ->add('media', 'sonata_media_type', array(
-                'provider' => 'sonata.media.provider.image',
-                'context'  => 'engine'
-            ));
-        ;
+            ->add('gallery',
+                'sonata_type_model',
+                array(
+                    'label' => 'Secondary Picture',
+                    'class' => 'Application\Sonata\MediaBundle\Entity\Gallery',
+                    'by_reference' => false,
+                    'multiple' => true,
+                    'expanded' => false,
+                    'required' => false,
+                ));
     }
 
     /**

@@ -39,6 +39,11 @@ class HotelController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('AppBundle:Hotel')->find($id);
+        $feedBacks = $em->getRepository('AppBundle:FeedBack')->findBy(array(
+            'hotels'=>$entity
+        ));
+
+
 
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find Hotel entity.');
@@ -46,6 +51,7 @@ class HotelController extends Controller
 
         return $this->render('AppBundle:Hotel:show.html.twig', array(
             'entity'      => $entity,
+            'feedbacks'=>$feedBacks
         ));
     }
 

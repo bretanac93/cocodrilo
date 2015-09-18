@@ -2,9 +2,12 @@
 
 namespace Cocodrilo\AppBundle\Entity;
 
+use Application\Sonata\MediaBundle\Entity\Gallery;
+use Application\Sonata\MediaBundle\Entity\Media;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
-use Sonata\MediaBundle\Model\MediaInterface;
+use Doctrine\ORM\PersistentCollection;
+
 
 /**
  * Hotel
@@ -83,10 +86,14 @@ class Hotel
     private $images;
 
     /**
-     * @var \Application\Sonata\MediaBundle\Entity\Media
-     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Media", cascade={"persist"}, fetch="LAZY")
+     * @ORM\ManyToMany(targetEntity="Application\Sonata\MediaBundle\Entity\Gallery")
+     * @ORM\JoinTable(name="hotel_gallery",
+     *   joinColumns={@ORM\JoinColumn(name="hotel_id", referencedColumnName="id")},
+     *   inverseJoinColumns={@ORM\JoinColumn(name="gallery_id", referencedColumnName="id")}
+     * )
      */
-    protected $media;
+    protected $gallery;
+
 
     public function __construct()
     {
@@ -275,20 +282,14 @@ class Hotel
         return $this->images;
     }
 
-    /**
-     * @param MediaInterface $media
-     */
-    public function setMedia(MediaInterface $media)
+    public function getGallery()
     {
-        $this->media = $media;
+        return $this->gallery;
     }
 
-    /**
-     * @return MediaInterface
-     */
-    public function getMedia()
+    public function setGallery(PersistentCollection $gallery)
     {
-        return $this->media;
+        $this->gallery = $gallery;
     }
 
     public function __toString()

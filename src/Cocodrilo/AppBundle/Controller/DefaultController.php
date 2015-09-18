@@ -8,7 +8,22 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('AppBundle:Default:index.html.twig');
+
+        $em = $this->getDoctrine()->getEntityManager();
+        $slogan1 = $em->find("AppBundle:Slogan" , 1);
+        $slogan2 = $em->find("AppBundle:Slogan" , 2);
+        $slogan3 = $em->find("AppBundle:Slogan" , 3);
+        $slogan4 = $em->find("AppBundle:Slogan" , 4);
+        $slogan5 = $em->find("AppBundle:Slogan" , 5);
+
+
+        return $this->render('AppBundle:Default:index.html.twig',array(
+            'slogan1'=>$slogan1,
+            'slogan2'=>$slogan2,
+            'slogan3'=>$slogan3,
+            'slogan4'=>$slogan4,
+            'slogan5'=>$slogan5
+        ));
     }
 
     public function aboutAction()
